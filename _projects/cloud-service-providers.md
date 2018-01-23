@@ -36,7 +36,7 @@ CSPs whose services are currently being used by the federal government or are in
 <section id="during-auth">
 
 <h3>During Authorization</h3>
-<p>CSPs that have demonstrated sufficient demand and have been prioritized to work with the JAB, or have identified one or more initial authorizing Agencies for their services and have been deemed “In-process”, can then begin the authorization process. For more information about JAB and Agency authorizations, please visit our JAB Authorization [insert link to Getting Authorized - JAB web page] and Agency Authorization [insert link to Getting Authorized - Agency web page] pages. 
+<p>CSPs that have demonstrated sufficient demand and have been prioritized to work with the JAB, or have identified one or more initial authorizing Agencies for their services and have been deemed “In-process”, can then begin the authorization process. For more information about JAB and Agency authorizations, please visit our <a href="{{site.baseurl}}/jab-authorization">JAB Authorization</a> and <a href="{{site.baseurl}}/agency-authorization">Agency Authorization</a> pages. 
 </p>
 
 <p>At a high level, the authorization process includes:</p>
