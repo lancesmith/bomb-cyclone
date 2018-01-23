@@ -39,37 +39,18 @@
 	display:  block;
 }
 
-.accordion {
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    background: none;
-    text-transform: none;
-    margin: 10px 0 10px 35px;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-
-/* Style the accordion panel. Note: hidden by default */
-.panel, .is-visible .sub-menu {
+.is-visible .sub-menu {
     background-color: white;
-//    display: none;
+    display: none;
     overflow: hidden;
 }
 
-.accordion:before, .is-visible .parent:before {
+.is-visible .parent:before {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #fff;
     float: left;
     margin-left: -30px;
-}
-
-.active:before {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 button.usa-menu-btn {

@@ -159,6 +159,16 @@ section#do-once { background-image: url("../../assets/img/do-once.png"); border:
 
 #path-one .panel p:first-of-type, #path-two .panel p:first-of-type, #path-three .panel p:first-of-type { margin: 0; }
 
+.accordion { cursor: pointer; width: 100%; text-align: left; border: none; outline: none; transition: 0.4s; background: none; text-transform: none; margin: 10px 0 10px 35px; }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* Style the accordion panel. Note: hidden by default */
+.panel, .is-visible .sub-menu { background-color: white; display: none; overflow: hidden; }
+
+.accordion:before, .is-visible .parent:before { content: '\02795'; /* Unicode character for "plus" sign (+) */ font-size: 13px; color: #fff; float: left; margin-left: -30px; }
+
+.active:before { content: "\2796"; /* Unicode character for "minus" sign (-) */ }
+
 .assessors-page section#post-auth { border: none; margin: 0; padding-bottom: 0; }
 
 .page-faqs .question { padding: 15px 0; border-bottom: 1px solid #cdcdcd; }
@@ -394,15 +404,9 @@ table svg:hover { color: #205493; }
 
 .usa-mobile_nav-active input[type=checkbox]:checked + label + ul, .usa-mobile_nav-active input[type=checkbox]:checked + label:nth-of-type(n) + ul { /* use label: nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/ /* show children when item is checked */ display: block; }
 
-.accordion { cursor: pointer; width: 100%; text-align: left; border: none; outline: none; transition: 0.4s; background: none; text-transform: none; margin: 10px 0 10px 35px; }
+.is-visible .sub-menu { background-color: white; display: none; overflow: hidden; }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-/* Style the accordion panel. Note: hidden by default */
-.panel, .is-visible .sub-menu { background-color: white; overflow: hidden; }
-
-.accordion:before, .is-visible .parent:before { content: '\02795'; /* Unicode character for "plus" sign (+) */ font-size: 13px; color: #fff; float: left; margin-left: -30px; }
-
-.active:before { content: "\2796"; /* Unicode character for "minus" sign (-) */ }
+.is-visible .parent:before { content: '\02795'; /* Unicode character for "plus" sign (+) */ font-size: 13px; color: #fff; float: left; margin-left: -30px; }
 
 button.usa-menu-btn { position: absolute; left: 5%; top: 40px; height: 50px; font-size: 2em; background: none; color: #cdcdcd; border: 2px solid #cdcdcd; }
 
