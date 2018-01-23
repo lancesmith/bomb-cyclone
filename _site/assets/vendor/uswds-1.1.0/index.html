@@ -1,0 +1,275 @@
+<h1 id="us-web-design-standards">U.S. Web Design Standards</h1>
+
+<p><a href="https://circleci.com/gh/18F/web-design-standards/tree/develop"><img src="https://circleci.com/gh/18F/web-design-standards/tree/develop.svg?style=shield" alt="CircleCI Build Status" /></a> <a href="https://codeclimate.com/github/18F/web-design-standards/coverage"><img src="https://codeclimate.com/github/18F/web-design-standards/badges/coverage.svg" alt="Test Coverage" /></a></p>
+
+<p>The <a href="https://standards.usa.gov">U.S. Web Design Standards</a> include a library of open source UI components and a visual style guide for U.S. federal government websites.</p>
+
+<p>This repository is for the Standards themselves. 18F maintains <a href="https://github.com/18F/web-design-standards-docs">another repository for the documentation and website</a>. To see the Standards and documentation on the web, visit <a href="https://standards.usa.gov">https://standards.usa.gov</a>.</p>
+
+<h2 id="contents">Contents</h2>
+
+<ul>
+  <li><a href="#background">Background</a></li>
+  <li><a href="#recent-updates">Recent updates</a></li>
+  <li><a href="#getting-started">Getting started</a></li>
+  <li><a href="#using-the-standards">Using the Standards</a>
+    <ul>
+      <li><a href="#download">Download</a></li>
+      <li><a href="#install-using-npm">Install using <code class="highlighter-rouge">npm</code></a>
+        <ul>
+          <li><a href="#importing-assets">Importing assets</a></li>
+          <li><a href="#sass">Sass</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
+        </ul>
+      </li>
+      <li><a href="#use-another-framework-or-package-manager">Use another framework or package manager</a></li>
+    </ul>
+  </li>
+  <li><a href="#fractal">Fractal</a>
+    <ul>
+      <li><a href="#template-compatibility">Template compatibility</a></li>
+    </ul>
+  </li>
+  <li><a href="#need-installation-help">Need installation help?</a></li>
+  <li><a href="#contributing-to-the-codebase">Contributing to the code base</a></li>
+  <li><a href="#reuse-of-open-source-style-guides">Reuse of open-source style guides</a></li>
+  <li><a href="#licenses-and-attribution">Licenses and attribution</a></li>
+</ul>
+
+<h2 id="background">Background</h2>
+
+<p>The components and style guide of the U.S. Web Design Standards follow industry-standard web accessibility guidelines and use the best practices of existing style libraries and modern web design. The <a href="https://www.whitehouse.gov/digital/united-states-digital-service">U.S. Digital Service</a> and <a href="https://18f.gsa.gov/">18F</a> created and maintain the U.S. Web Design Standards for designers and developers. They are designed for use by government product teams who want to create beautiful, easy-to-use online experiences for the public. To learn more about the project, check out this <a href="https://18f.gsa.gov/2015/09/28/web-design-standards/">blog post</a> and to view websites and applications check out our list <a href="WHO_IS_USING_USWDS.md">here</a>.</p>
+
+<h2 id="recent-updates">Recent updates</h2>
+
+<p>Information about the most recent release of the Standards can always be found in the <a href="https://github.com/18F/web-design-standards/releases">release history</a>. We include details about significant updates and any backwards incompatible changes along with a list of all changes.</p>
+
+<h2 id="getting-started">Getting started</h2>
+
+<p>We’re glad you’d like to use the Standards — here’s how you can get started:</p>
+
+<ul>
+  <li>Designers: <a href="https://standards.usa.gov/getting-started/designers/">Check out our Getting Started for Designers information</a>.
+    <ul>
+      <li><a href="https://github.com/18F/web-design-standards-assets/archive/master.zip">Design files of all the assets included in the Standards are available for download</a>.</li>
+    </ul>
+  </li>
+  <li>Developers: <a href="#using-the-standards">Follow the instructions in this README to get started.</a>
+    <ul>
+      <li><a href="https://github.com/18F/web-design-standards/releases/download/v1.0.0/uswds-1.0.0.zip">CSS, JavaScript, image, and font files of all the assets on this site are available for download</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="using-the-standards">Using the Standards</h2>
+
+<p>There are a few different ways to use the Standards within your project. Which one you choose depends on the needs of your project and how you are most comfortable working. Here are a few notes on what to consider when deciding which installation method to use:</p>
+
+<p><em>Download the Standards if:</em></p>
+<ul>
+  <li>You are not familiar with <code class="highlighter-rouge">npm</code> and package management.</li>
+</ul>
+
+<p><em>Use the Standards <code class="highlighter-rouge">npm</code> package if:</em></p>
+<ul>
+  <li>You are familiar with using <code class="highlighter-rouge">npm</code> and package management.</li>
+  <li>You would like to leverage Standards <a href="#sass">Sass</a> files.</li>
+</ul>
+
+<h3 id="download">Download</h3>
+
+<ol>
+  <li>Download the <a href="https://github.com/18F/web-design-standards/releases/download/v1.0.0/uswds-1.0.0.zip">Standards zip file</a> and open that file.</li>
+</ol>
+
+<p>After extracting the zip file you should see the following file and folder structure:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  uswds-1.0.0/
+  ├── css/
+  │   ├── uswds.min.css.map
+  │   ├── uswds.min.css
+  │   └── uswds.css
+  ├── fonts/
+  ├── html/
+  └── js/
+      ├── uswds.min.js.map
+      ├── uswds.min.js
+      └── uswds.js
+
+</code></pre></div></div>
+
+<ol>
+  <li>Copy these files and folders into a relevant place in your project’s code base. Here is an example structure for how this might look:</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  example-project/
+  ├── assets/
+  │   ├── uswds-1.0.0/
+  │   ├── stylesheets/
+  │   ├── images/
+  │   └── javascript/
+  └── index.html
+</code></pre></div></div>
+
+<p>You’ll notice in our example above that we also outline a <code class="highlighter-rouge">stylesheets</code>, <code class="highlighter-rouge">images</code> and <code class="highlighter-rouge">javascript</code> folder in your <code class="highlighter-rouge">assets</code> folder. These folders are to help organize any assets that are unique to your project.</p>
+
+<ol>
+  <li>To use the Standards on your project, you’ll need to reference the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS (<em>C</em>ascading <em>S</em>tyle <em>S</em>heets)</a> and JavaScript files in each HTML page or dynamic templates in your project.</li>
+</ol>
+
+<p>Here is an example of how to reference these assets in your <code class="highlighter-rouge">index.html</code> file:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="cp">&lt;!DOCTYPE html&gt;</span>
+  <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>My Example Project<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/uswds-1.0.0/css/uswds.min.css"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+
+    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"assets/uswds-1.0.0/js/uswds.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+  <span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<p>We offer both files, the CSS and the JavaScript, in two versions — a minified version, and an un-minified one. (In the examples above, we are using the minified files.) Use the minified files in a production environment or to reduce the file size of your downloaded assets. And the un-minified files are better if you are in a development environment or would like to debug the CSS or JavaScript assets in the browser.</p>
+
+<p>And that’s it — you should now be able to copy our code samples into our <code class="highlighter-rouge">index.html</code> and start using the Standards.</p>
+
+<h3 id="install-using-npm">Install using npm</h3>
+
+<p><code class="highlighter-rouge">npm</code> is a package manager for Node based projects. The U.S. Web Design Standards maintains a <a href="https://www.npmjs.com/package/uswds"><code class="highlighter-rouge">uswds</code> package</a> for you to utilize both the pre-compiled and compiled files on your project.</p>
+
+<ol>
+  <li>Install <code class="highlighter-rouge">Node/npm</code>. Below is a link to find the install method that coincides with your operating system:</li>
+</ol>
+
+<ul>
+  <li>Node v4.2.3+, <a href="https://nodejs.org/en/download/">Installation guides</a></li>
+</ul>
+
+<p><strong>Note for Windows users:</strong> If you are using Windows and are unfamiliar with <code class="highlighter-rouge">Node</code> or <code class="highlighter-rouge">npm</code>, we recommend following <a href="http://blog.teamtreehouse.com/install-node-js-npm-windows">Team Treehouse’s tutorial</a> for more information.</p>
+
+<ol>
+  <li>Make sure you have installed it correctly:</li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  npm <span class="nt">-v</span>
+  3.10.8 <span class="c"># This line may vary depending on what version of Node you've installed.</span>
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>Create a <code class="highlighter-rouge">package.json</code> file. You can do this manually, but an easier method is to use the <code class="highlighter-rouge">npm init</code> command. This command will prompt you with a few questions to create your <code class="highlighter-rouge">package.json</code> file.</p>
+  </li>
+  <li>
+    <p>Add <code class="highlighter-rouge">uswds</code> to your project’s <code class="highlighter-rouge">package.json</code>:</p>
+  </li>
+</ol>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  npm install <span class="nt">--save</span> uswds
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">uswds</code> module is now installed as a dependency. You can use the un-compiled files found in the <code class="highlighter-rouge">src/</code> or the compiled files in the <code class="highlighter-rouge">dist/</code> directory.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node_modules/uswds/
+├── dist/
+│   ├── css/
+│   ├── fonts/
+│   ├── html/
+│   ├── img/
+│   ├── js/
+└── src/
+    ├── fonts/
+    ├── img/
+    ├── js/
+    ├── stylesheets/
+    └── templates/
+</code></pre></div></div>
+
+<h4 id="importing-assets">Importing assets</h4>
+
+<p>Since you are already using <code class="highlighter-rouge">npm</code>, the U.S. Web Design Standards team recommends leveraging the ability to write custom scripts. Here are some links to how we do this with our docs website using <code class="highlighter-rouge">npm</code> + <a href="http://gulpjs.com/"><code class="highlighter-rouge">gulp</code></a>:</p>
+
+<p><a href="https://github.com/18F/web-design-standards-docs/blob/develop/package.json#L4">Link to <code class="highlighter-rouge">npm</code> scripts example in <code class="highlighter-rouge">web-design-standards-docs</code></a></p>
+
+<p><a href="https://github.com/18F/web-design-standards-docs/blob/develop/gulpfile.js">Link to gulpfile.js example in <code class="highlighter-rouge">web-design-standards-docs</code></a></p>
+
+<h4 id="sass">Sass</h4>
+
+<p>The Standards are easily customizable using the power of <a href="http://sass-lang.com/">Sass (Syntactically Awesome Style Sheets)</a>. The main Sass (SCSS) source file is located here:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node_modules/uswds/src/stylesheets/uswds.scss
+</code></pre></div></div>
+
+<p>Global variables are defined in the <code class="highlighter-rouge">node_modules/uswds/src/stylesheets/core/_variables.scss</code> file. Custom theming can be done by copying the <code class="highlighter-rouge">_variables.scss</code> file into your own project’s Sass folder, changing applicable variable values, and importing it before <code class="highlighter-rouge">uswds.scss</code>.</p>
+
+<p>Below is an example of how you might setup your main Sass file to achieve this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@import 'variables.scss' # Custom Sass variables file
+@import 'node_modules/uswds/src/stylesheets/uswds.scss';
+
+</code></pre></div></div>
+
+<p>You can now use your copied version of <code class="highlighter-rouge">_variables.scss</code> to override any styles to create a more custom look and feel to your application.</p>
+
+<h4 id="javascript">JavaScript</h4>
+<p><code class="highlighter-rouge">require('uswds')</code> will load all of the U.S. Web Design Standards’ JavaScript onto the page. Add this line to whatever initializer you use to load JavaScript into your application.</p>
+
+<h3 id="use-another-framework-or-package-manager">Use another framework or package manager</h3>
+
+<p>If you’re using another framework or package manager that doesn’t support <code class="highlighter-rouge">npm</code>, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the <a href="#download">download instructions</a>. Please note that the core team <a href="https://github.com/18F/web-design-standards/issues/877">isn’t responsible for all frameworks’ implementations</a>.</p>
+
+<p>If you’re interested in maintaining a package that helps us distribute the U.S. Web Design Standards, the project’s build system can help you create distribution bundles to use in your project. Please read our <a href="/fedramp-gov/assets/vendor/uswds-1.1.0/CONTRIBUTING.md#building-the-project-locally-with--gulp-">contributing guidelines</a> to locally build distributions for your framework or package manager.</p>
+
+<h2 id="fractal">Fractal</h2>
+
+<p>We’re using <a href="http://fractal.build">Fractal</a> to generate an interactive component library for the Standards. You can run it locally after <code class="highlighter-rouge">npm install</code> with:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm start
+</code></pre></div></div>
+
+<p>Then, visit <a href="http://localhost:3000/">http://localhost:3000/</a> to see the Standards in action.</p>
+
+<h3 id="template-compatibility">Template compatibility</h3>
+
+<h2 id="need-installation-help">Need installation help?</h2>
+
+<p>Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue here:</p>
+
+<p><a href="https://github.com/18F/web-design-standards/issues">https://github.com/18F/web-design-standards/issues</a>.</p>
+
+<p>You can also email us directly at uswebdesignstandards@gsa.gov.</p>
+
+<h2 id="contributing-to-the-code-base">Contributing to the code base</h2>
+
+<p>For complete instructions on how to contribute code, please read <a href="/fedramp-gov/assets/vendor/uswds-1.1.0/CONTRIBUTING.md">CONTRIBUTING.md</a>. These instructions also include guidance on how to set up your own copy of the Standards style guide website for development.</p>
+
+<p>If you would like to learn more about our workflow process, check out the <a href="https://github.com/18F/web-design-standards/wiki/Workflow">Workflow</a> and <a href="https://github.com/18F/web-design-standards/wiki/Label-glossary">Label Glossary</a> pages on the wiki.</p>
+
+<p>If you have questions or concerns about our contributing workflow, please contact us by <a href="https://github.com/18F/web-design-standards/issues">filing a GitHub issue</a> or <a href="mailto:uswebdesignstandards@gsa.gov">emailing our team</a>.</p>
+
+<h2 id="reuse-of-open-source-style-guides">Reuse of open-source style guides</h2>
+
+<p>Much of the guidance in the U.S. Web Design Standards leans on open source designs, code, and patterns from other civic and government organizations, including:</p>
+
+<ul>
+  <li>Consumer Financial Protection Bureau’s <a href="https://cfpb.github.io/design-manual/">Design Manual</a></li>
+  <li>U.S. Patent and Trademark Office’s <a href="http://uspto.github.io/designpatterns/">Design Patterns</a></li>
+  <li>Healthcare.gov <a href="http://styleguide.healthcare.gov/">Style Guide</a></li>
+  <li>UK’s Government Digital Service’s <a href="http://govuk-elements.herokuapp.com/">UI Elements</a></li>
+  <li>Code for America’s Chime <a href="https://github.com/chimecms/chime-starter">Styleguide</a></li>
+  <li>Pivotal Labs <a href="http://styleguide.cfapps.io/">Component Library</a></li>
+</ul>
+
+<h2 id="licenses-and-attribution">Licenses and attribution</h2>
+
+<p>A few parts of this project are not in the public domain. Attribution and licensing information for those parts are described in detail in <a href="/fedramp-gov/assets/vendor/uswds-1.1.0/LICENSE.md">LICENSE.md</a>.</p>
+
+<p>The rest of this project is in the worldwide public domain, released under the <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal public domain dedication</a>.</p>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>All contributions to this project will be released under the CC0 dedication alongside the public domain portions of this project. For more information, see <a href="/fedramp-gov/assets/vendor/uswds-1.1.0/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>

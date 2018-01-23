@@ -7,7 +7,7 @@ body-class: about-us
 ---
 <section id="about">
 <div class="image-container">
-<img src="../assets/img/fedramp-about.png">
+<img src="{{site.baseurl}}/assets/img/fedramp-about.png">
 </div>
 <div class="text-container">
 <p>The Federal Risk and Authorization Management Program (FedRAMP) is a government-wide program that provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services. </p>
@@ -31,12 +31,12 @@ body-class: about-us
 <h2>FedRAMP By the Numbers</h2> 
 <div class="image-container">
 <div class="column-1">
-<img class="one" src="../assets/img/fedramp_number01.png">
-<img class="two" src="../assets/img/fedramp_number02.png">
-<img class="three" src="../assets/img/fedramp_number04.png">
+<img class="one" src="{{site.baseurl}}/assets/img/fedramp_number01.png">
+<img class="two" src="{{site.baseurl}}/assets/img/fedramp_number02.png">
+<img class="three" src="{{site.baseurl}}/assets/img/fedramp_number04.png">
 </div>
 <div class="column-2">
-<img class="four" src="../assets/img/fedramp_number03.png">
+<img class="four" src="{{site.baseurl}}/assets/img/fedramp_number03.png">
 </div>
 </div>
 </section>
