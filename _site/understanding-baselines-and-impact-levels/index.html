@@ -289,13 +289,20 @@
 
       <main id="main" tabindex="-1">
       <div class="page-banner">
-<h1> Understanding Baselines and Impact Levels in FedRAMP</h1>
+<h1>Focus on FedRAMP</h1>
 </div>
 <div class="usa-grid usa-section usa-content">
   <div class="usa-width-three-fourths usa-content">
+  <h1>Understanding Baselines and Impact Levels in FedRAMP</h1>
   
-  <img src="/fedramp-gov../assets/img/blog_placementimg.png">
+  <div class="page--banner"> 
+ <img src="/fedramp-gov/assets/img/blog_placementimg.png">
+  </div>
   
+  <div class="author-date">
+  <p class="by">By FedRAMP</p>
+  <p class="date">November 16, 2017</p>
+  </div>
   <p>The FedRAMP PMO fields a number of questions about impact levels and the security categorization of cloud services. <a href="http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf">Federal Information Processing Standard (FIPS) 199</a> provides the standards for categorizing information and information systems, which is the process CSPs use to ensure their services meet the minimum security requirements for the data processed, stored, and transmitted on them. The security categories are based on the potential impact that certain events would have on an organization’s ability to accomplish its assigned mission, protect its assets, fulfill its legal responsibilities, maintain its day-to-day functions, and protect individuals.</p>
 
 <p>It is important that Cloud Service Providers (CSPs) understand the impact level of their offering(s) and correlated security categorization when developing their authorization strategy. In service of making this information more accessible and straightforward, we’ve provided a high level overview of the FIPS 199 security categories.</p>
@@ -444,10 +451,11 @@ for (i = 0; i < acc.length; i++) {
 </script>
 <script type="text/javascript">    
     	$(document).ready(function(){
-    	      $(".usa-mobile_nav-active .parent").click(function(){
+    	      $("li.parent").click(function(){
     	           $(".sub-menu", this).toggle();
     	      });
-    	});</script>
+    	});
+    </script>
  </div>
 </footer>
 

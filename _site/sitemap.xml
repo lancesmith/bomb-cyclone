@@ -777,11 +777,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/fedramp-gov/blog/</loc>
-    
-  </url>
-  
-  <url>
     <loc>http://localhost:4000/fedramp-gov/documents/</loc>
     
   </url>
@@ -803,6 +798,11 @@
   
   <url>
     <loc>http://localhost:4000/fedramp-gov/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/</loc>
     
   </url>
   
@@ -843,6 +843,111 @@
   
   <url>
     <loc>http://localhost:4000/fedramp-gov/assets/vendor/uswds-1.1.0/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page2/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page3/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page4/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page5/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page6/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page7/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page8/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page9/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page10/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page11/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page12/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page13/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page14/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page15/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page16/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page17/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page18/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page19/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page20/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page21/</loc>
+    
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/fedramp-gov/blog/page22/</loc>
     
   </url>
   
